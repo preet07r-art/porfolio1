@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Portfolio</div>
+    <nav>
+      <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-title">
+      <img src="images/profile1.png" alt="Profile Image" class="small-profile" />
+      <h1>Preet Raut</h1>
+    </div>
+    <p class="hero-role">Full Stack Developer &amp; Creative Designer</p>
+    <p class="hero-text">
+      Crafting beautiful digital experiences with modern technologies and creative solutions.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn primary">Get In Touch</a>
+      <a href="#about" class="btn outline">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="card-section">
+    <h2>About Me</h2>
+    <div class="card about-card">
+      <p>
+        Hey! I'm Preet Raut from Vasai, a lively suburb near Mumbai. I love coding—
+        especially frontend development—and enjoy working with SQL to make things
+        run smoothly behind the scenes.
+      </p>
+
+      <p>
+        Outside tech, I’m a sports enthusiast who enjoys cricket and exploring
+        global politics, drawing, and reading biographies, sci-fi, and comics.
+        I’d describe myself as an ambivert—someone who enjoys company but values
+        quiet time too.
+      </p>
+      </p>
+      <div class="about-info">
+        <div class="info-card">
+          <h3>📍 Location</h3>
+          <p>Vasai, Mumbai</p>
+        </div>
+        <div class="info-card">
+          <h3>💼 Role</h3>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="info-card">
+          <h3>❤️ Interests</h3>
+          <p>Web Dev, Sports, UI/UX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="card-section">
+    <h2>Gallery</h2>
+    <div class="card gallery-grid">
+      <!-- Replace src with your images -->
+      <img src="https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg" alt="Workspace" />
+      <img src="https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg" alt="Architecture" />
+      <img src="https://images.pexels.com/photos/572688/pexels-photo-572688.jpeg" alt="Landscape" />
+      <img src="https://images.pexels.com/photos/17679/pexels-photo.jpg" alt="Abstract art" />
+      <img src="https://images.pexels.com/photos/158826/netbook-notebook-netbook-computer-158826.jpeg" alt="Tech" />
+      <img src="https://images.pexels.com/photos/808941/pexels-photo-808941.jpeg" alt="Desk" />
+    </div>
+  </section>
+
+  <!-- Skills -->
+<section id="skills" class="card-section">
+    <h2>Skills &amp; Tools</h2>
+
+    <div class="skills-grid">
+      <!-- Frontend card -->
+      <div class="skill-card glass-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon"><i class="fa-solid fa-folder"></i></div>
+          <span class="skill-card-label">Frontend</span>
+        </div>
+
+        <div class="skill-pill active-pill">
+          <span>HTML &amp; CSS</span>
+        </div>
+        <div class="skill-pill">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-pill">
+          <span>React</span>
+        </div>
+
+        <div class="skill-bar big-bar">
+          <div data-width="80"></div>
+        </div>
+      </div>
+
+      <!-- Backend card -->
+      <div class="skill-card glass-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+          <span class="skill-card-label">Backend</span>
+        </div>
+
+        <div class="skill-pill active-pill">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-pill">
+          <span>React</span>
+        </div>
+        <div class="skill-pill">
+          <span>Node.js</span>
+        </div>
+
+        <div class="skill-bar big-bar">
+          <div data-width="70"></div>
+        </div>
+      </div>
+
+      <!-- UI/UX card -->
+      <div class="skill-card glass-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon"><i class="fa-solid fa-gear"></i></div>
+          <span class="skill-card-label">UI/UX Design</span>
+        </div>
+
+        <div class="skill-pill active-pill">
+          <span>Figma</span>
+        </div>
+        <div class="skill-pill">
+          <span>Wireframing</span>
+        </div>
+        <div class="skill-pill">
+          <span>Prototyping</span>
+        </div>
+
+        <div class="skill-bar big-bar">
+          <div data-width="75"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact" class="card-section">
+    <h2>Contact Me</h2>
+    <div class="card contact-card">
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your name" />
+        <label>Email</label>
+        <input type="email" placeholder="your.email@example.com" />
+        <label>Message</label>
+        <textarea rows="4" placeholder="Your message..."></textarea>
+        <button type="submit" class="btn primary full">Send Message</button>
+      </form>
+      <div class="socials">
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFL4DdqDXptPQAAAZsnb70o0nx8qAVH3sQqMxqANovMU5ckBOeu6oAycH0hdRSnXDC0ezin8VmEld-4ZHgCyG8qQLnUetAJEGgw_8Uzi7LNYxjTX_2rnEVNyCkwjjkUPP0SSSg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpreet-raut-982ba6378%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/preet_raut07?igsh=cHVodG01djRpbjh3"><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href="preet07r@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Preet Raut. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
